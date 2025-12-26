@@ -1,6 +1,6 @@
 # Ex02
 Time Table
-# Date:
+# Date:12-12-2025
 # AIM
 To write a html webpage page to display your slot timetable.
 
@@ -145,7 +145,25 @@ Execute the program using runserver command.
 </body>
 </html>
 ```
+urls.py
+from django.contrib import admin
+from django.urls import path
+from classes import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.slot),
+]
+```
+```
+views.py
+from django.shortcuts import render
+
+def slot(request):
+    return render(request, 'timetable.html')
+```
 
 # OUTPUT
+slots/time_tableslot/Screenshot 2025-12-26 211300.png
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
