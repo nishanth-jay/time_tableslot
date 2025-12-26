@@ -24,141 +24,127 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
-<!DOCTYPE html>
+```
 <html>
 <head>
-    <title>SLOT TIME TABLE</title>
+    <title>TIMETABLE</title>
+    <link rel="icon" href="/static/logoimages.jpg">
     <style>
-        table,th,td{
-            border:10px dotted blue;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            background-color: blanchedalmond;
-            border-style: inset;
+        body{
+            background-color:#e8f3ff;
+            font-family: Arial, sans-serif;
         }
-        img {
-            width: 1000px;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+
+        .centerimage{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
         }
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            text-align: center;
-            font-size: 16px;
-        }
-        th, td {
-            border: 2px solid black;
-            padding: 10px;
-        }
-        th {
-            background-color: yellow;
-        }
-        td {
-            background-color: #00e5ff;
-            font-weight: bold;
+
+        table, th, td {
+            margin-left:auto;
+            margin-right:auto;
+            text-align:center;
+            padding:6px;
+            border-style:ridge;
+            border-color:#1f1f1f;
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <img src="sec_header.png" alt="saveetha engineering college">
-    </div>
 
-    <div>
-        <p style="text-align: center;">SLOT TIME TABLE - J Nishanth (25015083)</p>
-    </div>
+<img src="/static/logo.jpg" class="centerimage" height="200px" width="1000px">
 
-    <table>
-        <tr>
-            <th>Timings / Days</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </tr>
+<table style="background-color:#b9f2e3;font-size:x-large;">
+    <caption style="font-size:24px;background-color:#312e81;color:white;margin-bottom:10px;">
+        SLOT-TIMETABLE — J NISHANTH (25015083)
+    </caption>
 
-        <tr>
-            <td>8am to 10am</td>
-            <td>Web App Dev</td>
-            <td>Web App Dev</td>
-            <td>Web App Dev</td>
-            <td>Free</td>
-            <td>Free</td>
-            <td>Python</td>
-        </tr>
+    <tr style="font-size:23px;background-color:#6d28d9;color:white;">
+        <th>SLOT / DAYS</th>
+        <th>MONDAY</th>
+        <th>TUESDAY</th>
+        <th>WEDNESDAY</th>
+        <th>THURSDAY</th>
+        <th>FRIDAY</th>
+        <th>SATURDAY</th>
+    </tr>
 
-        <tr>
-            <td>10am to 12pm</td>
-            <td>Communicative English</td>
-            <td>Python</td>
-            <td>Free</td>
-            <td>Free</td>
-            <td>Communicative English</td>
-            <td>English</td>
-        </tr>
+    <tr style="font-size:23px;">
+        <th style="background-color:#6d28d9;color:white;">8-10</th>
+        <td colspan="3" style="background:#a5b4fc;">FWAD</td>
+        <td colspan="2" style="background:#99f6e4;">FREE SLOT</td>
+        <td style="background:#c7d2fe;">PYTHON</td>
+    </tr>
 
-        <tr>
-            <td>12pm to 1pm</td>
-            <td colspan="6">Lunch</td>
-        </tr>
+    <tr style="font-size:23px;">
+        <th style="background-color:#6d28d9;color:white;">10-12</th>
+        <td style="background:#fde68a;">ENG</td>
+        <td style="background:#c7d2fe;">PYTHON</td>
+        <td colspan="2" style="background:#bbf7d0;">FREE SLOT</td>
+        <td colspan="2" style="background:#fde68a;">ENG</td>
+    </tr>
 
-        <tr>
-            <td>1pm to 3pm</td>
-            <td>Web App Dev</td>
-            <td>Free</td>
-            <td>Mentor Meet</td>
-            <td>Free</td>
-            <td>Web App Dev</td>
-            <td>English</td>
-        </tr>
+    <tr style="font-size:23px;">
+        <th style="background-color:#6d28d9;color:white;">12-1</th>
+        <th colspan="6" style="font-size:32px;background:#020617;color:white;">
+            L U N C H
+        </th>
+    </tr>
 
-        <tr>
-            <td>3pm to 5pm</td>
-            <td>Free</td>
-            <td>Python</td>
-            <td>Python</td>
-            <td>Web App Dev</td>
-            <td>Free</td>
-            <td>Free</td>
-        </tr>
-    </table>
+    <tr style="font-size:23px;">
+        <th style="background-color:#6d28d9;color:white;">1-3</th>
+        <td style="background:#a5b4fc;">FWAD</td>
+        <td style="background:#bbf7d0;">FREE SLOT</td>
+        <td style="background:#f9a8d4;">MENTOR MEET</td>
+        <td style="background:#bbf7d0;">FREE SLOT</td>
+        <td style="background:#a5b4fc;">FWAD</td>
+        <td style="background:#fde68a;">ENG</td>
+    </tr>
 
-    <table>
-        <tr>
-            <th>S.No</th>
-            <th>Subject Code</th>
-            <th>Subject Name</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>19AI414</td>
-            <td>Fundamentals of Web Application Development (FWAD)</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>19EN101</td>
-            <td>Communicative English</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>19AI301</td>
-            <td>Python Programming</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Mentor Meet</td>
-            <td>(ECM-M)</td>
-        </tr>
-    </table>
+    <tr style="font-size:23px;">
+        <th style="background-color:#6d28d9;color:white;">3-5</th>
+        <td style="background:#bbf7d0;">FREE SLOT</td>
+        <td colspan="3" style="background:#c7d2fe;">PYTHON</td>
+        <td colspan="2" style="background:#bbf7d0;">FREE SLOT</td>
+    </tr>
+</table>
+
+
+<table style="background-color:#dbeafe;margin-top:30px;font-size:x-large;">
+    <caption style="font-size:24px;background-color:#312e81;color:white;margin-bottom:10px;">
+        SUBJECTS ENROLLED
+    </caption>
+
+    <tr style="font-size:23px;background-color:#6d28d9;color:white;">
+        <th>S.No</th>
+        <th>COURSE CODE</th>
+        <th>COURSE NAME</th>
+    </tr>
+
+    <tr>
+        <th style="background-color:#6d28d9;color:white;">1</th>
+        <td>19AI414</td>
+        <td>FUNDAMENTALS OF WEB APPLICATION DEVELOPMENT</td>
+    </tr>
+
+    <tr>
+        <th style="background-color:#6d28d9;color:white;">2</th>
+        <td>19AI301</td>
+        <td>PYTHON PROGRAMMING</td>
+    </tr>
+
+    <tr>
+        <th style="background-color:#6d28d9;color:white;">3</th>
+        <td>19EN101</td>
+        <td>COMMUNICATIVE ENGLISH</td>
+    </tr>
+</table>
+
 </body>
 </html>
+```
 
 # OUTPUT
 # RESULT
