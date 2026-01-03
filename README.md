@@ -165,6 +165,6 @@ def slot(request):
 ```
 
 # OUTPUT
-slots/time_tableslot/Screenshot 2025-12-26 211300.png
+<img width="1919" height="1015" alt="Screenshot 2025-12-26 211300" src="https://github.com/user-attachments/assets/30e956a9-3ec0-4d9e-b124-0ed527bed06e" />
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
